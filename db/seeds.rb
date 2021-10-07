@@ -9,7 +9,7 @@ brands = Brand.create([
     },
     {
         name: "Aero",
-        image_url: "https://cdn.freebiesupply.com/logos/large/2x/aeropostale-01-logo-png-transparent.png"
+        image_url: "https://w7.pngwing.com/pngs/288/816/png-transparent-coupon-discounts-and-allowances-aeropostale-code-american-eagle-outfitters-black-friday-text-retail-logo.png"
     }
 ])
 

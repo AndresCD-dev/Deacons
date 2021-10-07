@@ -8,11 +8,11 @@ module Api
             end 
             
             def show
-                shoe = Shoe.find_by(id: pramas[:id]) 
+                shoe = Shoe.find_by(id: params[:id]) 
 
                 render json: ShoeSerializer.new(shoe).serialized_json 
             end
-        end
+
     end
     
 end

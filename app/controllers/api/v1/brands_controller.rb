@@ -7,12 +7,17 @@ module Api
                 render json: BrandSerializer.new(brands, options).serialized_json  
             end 
             
+            # def show
+            #     brand = Brand.find_by(id: params[:id]) 
+
+            #     render json: BrandSerializer.new(brand, options).serialized_json 
+            # end
+
             def show
-                brand = Brand.find_by(id: params[:id]) 
+                brand = Brand.find_by(name: params[:name]) 
 
                 render json: BrandSerializer.new(brand, options).serialized_json 
             end
-
 
 
 

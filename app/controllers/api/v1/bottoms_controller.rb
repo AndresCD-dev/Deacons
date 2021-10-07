@@ -4,13 +4,13 @@ module Api
             def index
                 bottoms = Bottom.all
 
-                render json: topserializer.new(bottoms).serialized_json  
+                render json: BottomSerializer.new(bottoms).serialized_json  
             end 
             
             def show
-                Bottom = Bottom.find_by(id: pramas[:id]) 
+                Bottom = Bottom.find_by(id: params[:id]) 
 
-                render json: topserializer.new(bottom).serialized_json 
+                render json: BottomSerializer.new(bottom).serialized_json 
             end
         end
     end
